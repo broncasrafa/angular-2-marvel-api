@@ -1,3 +1,66 @@
-<p>
-  comics-details works!
-</p>
+<div class="container">
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5">
+        <h2 class="featurette-heading">
+            {{ comic.title }}
+        </h2>
+        <p class="lead">
+            {{ comic.description }}
+        </p>
+      </div>
+      <div class="col-md-5 col-md-pull-7">
+        <img class="featurette-image img-responsive center-block" data-src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}" alt="{{ comic.title }}">
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row">
+        <div class="col-xs-6 col-lg-4">
+            <p class="lead">
+              <b>Format:</b> {{ comic.format }}
+              <br />
+              <b>Pages:</b> {{ comic.pageCount }} pages
+              <br />
+              <b>Prices:</b>
+              <span *ngFor="let p of comic.prices">
+                  {{ p.price }} <br />
+              </span>
+              <b>ISBN:</b> {{ comic.isbn }}
+              <br />
+              <b>UPC:</b> {{ comic.upc }}
+            </p>
+        </div>
+        <div class="col-xs-6 col-lg-4">
+            <p class="lead">
+                <b>Dates:</b>
+                <span *ngFor="let d of comic.dates">
+                    {{ d.date }} <br />
+                </span>
+                <br />
+                <b>Creators:</b>
+                <span *ngFor="let c of comic.creators.items">
+                    {{ c.name }} - {{ c.role }} <br />
+                </span>
+                <br />
+                <b>Stories:</b>
+                <span *ngFor="let s of comic.stories.items">
+                    {{ s.name }} <br />
+                </span>
+                <br />
+                <b>Events:</b>
+                <span *ngFor="let s of comic.events.items">
+                    {{ s.name }} <br />
+                </span>
+                <br />
+                <b>Characters:</b>
+                <span *ngFor="let s of comic.characters.items">
+                    {{ s.name }} <br />
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-8" *ngFor="let c of comic.images">
+            <img src="{{ c.path }}/standard_xlarge.{{ c.extension }}" class="img-responsive pad-img" alt="" />
+          </div>
+    </div>
+  </div>

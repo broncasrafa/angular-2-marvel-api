@@ -20,7 +20,7 @@ export class CharactersService {
     const urlWomen = '../../assets/data/api/top_women.json';
     const urlTitanicTeams = '../../assets/data/api/top_titanic_teams.json';
     const urlIndex = '../../assets/data/api/characters_index.json';
-    
+
     return this.http.get(urlIndex)
                     .toPromise()
                     .then(response => response.json().data.results)
