@@ -6,8 +6,12 @@ import { SeriesComponent } from './series/series.component';
 import { StoriesComponent } from './stories/stories.component';
 import { CreatorsComponent } from './creators/creators.component';
 import { EventsComponent } from './events/events.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'search', component: HomeComponent },
+
   { path: 'characters', component: CharactersComponent },
   { path: 'character/:id', component: CharactersComponent },
 

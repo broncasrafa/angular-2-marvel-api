@@ -1,3 +1,16 @@
-<p>
-  search works!
-</p>
+<div class="container">
+  <div class="input-group">
+      <input type="text" class="form-control" id="search" placeholder="Enter character name here" [(ngModel)]="objSearch.term" />
+      <span class="input-group-btn">
+        <button id="btn-pesquisar" class="btn btn-danger" type="button" id="buscar" (click)="search()" [disabled]="isLoading">Pesquisar</button>
+      </span>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-6" *ngFor="let c of characters">
+        <img src="{{ c.thumbnail.path }}.{{ c.thumbnail.extension }}" class="img img-responsive img-circle" alt="{{ c.name }}" style="padding: 5px;" />
+        <h4>
+          <a href="/character/{{ c.id }}">{{ c.name }}</a>
+        </h4>
+    </div>
+  </div>
+</div>

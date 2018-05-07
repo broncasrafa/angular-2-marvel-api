@@ -1,6 +1,4 @@
-import { Component, OnInit  } from '@angular/core';
-import { SearchService } from './search/search.service';
-import { Search } from './search/search';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-marvel-heroes',
@@ -9,25 +7,8 @@ import { Search } from './search/search';
 })
 
 
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-  constructor(private searchService: SearchService) { }
+  constructor() { }
 
-  objSearch = new Search();
-  characters: Array<Object>;
-
-  isLoading = false;
-
-  ngOnInit() {
-  }
-
-  search() {
-
-    this.isLoading = true;
-    this.searchService.searchCharacter(this.objSearch.term)
-                      .then(searchResponse => {
-                        this.characters = searchResponse;
-                        this.isLoading = false;
-                      });
-  }
 }

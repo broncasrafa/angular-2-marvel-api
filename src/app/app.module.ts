@@ -22,6 +22,8 @@ import { EventsService } from './events/events.service';
 import { SeriesService } from './series/series.service';
 import { StoriesService } from './stories/stories.service';
 import { SearchService } from './search/search.service';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -36,7 +38,9 @@ import { SearchService } from './search/search.service';
     StoriesComponent,
     CreatorsComponent,
     EventsComponent,
-    SearchComponent
+    SearchComponent,
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
