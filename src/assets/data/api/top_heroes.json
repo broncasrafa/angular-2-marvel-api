@@ -1,0 +1,508 @@
+﻿{
+	"code": 200,
+	"status": "Ok",
+	"copyright": "© 2017 MARVEL",
+	"attributionText": "Data provided by Marvel. © 2017 MARVEL",
+	"attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2017 MARVEL</a>",
+	"etag": "192d5ade8c24d0426c828021daa431f655f4d3d9",
+	"data": {
+		"offset": 0,
+		"limit": 100,
+		"total": 22,
+		"count": 22,
+		"results": [{
+				"id": 1009610,
+				"name": "Spider-Man",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/526548a343e4b",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009718,
+				"name": "Wolverine",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009351,
+				"name": "Hulk",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009368,
+				"name": "Iron Man",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009282,
+				"name": "Doctor Strange",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/5/f0/5261a85a501fe",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009629,
+				"name": "Storm",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/40/526963dad214d",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1010338,
+				"name": "Captain Marvel (Carol Danvers)",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/80/5269608c1be7a",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009189,
+				"name": "Black Widow",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/f/30/50fecad1f395b",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009664,
+				"name": "Thor",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/d/d0/5269657a74350",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009220,
+				"name": "Captain America",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009262,
+				"name": "Daredevil",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/d/50/50febb79985ee",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1011490,
+				"name": "Hank Pym",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/2/b0/5205305343bfd",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009707,
+				"name": "Wasp",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/c0/5390dfd5ef165",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1010354,
+				"name": "Adam Warlock",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/a/f0/5202887448860",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1017313,
+				"name": "Thing (Marvel Heroes)",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/20/5239be1a26d18",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009356,
+				"name": "Human Torch",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/70/5261a7f7b0917",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009459,
+				"name": "Mr. Fantastic",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/d/c0/51127e9337538",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009366,
+				"name": "Invisible Woman",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/a0/52695b9cd40b6",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009175,
+				"name": "Beast",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/2/80/511a79a0451a3",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009313,
+				"name": "Gambit",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/a/40/52696aa8aee99",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009268,
+				"name": "Deadpool",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009496,
+				"name": "Jean Grey",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/f/30/4bc654cf9d0ac",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009257,
+				"name": "Cyclops",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/70/526547e2d90ad",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009191,
+				"name": "Blade",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/8/a0/523ca6f2b11e4",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009338,
+				"name": "Hawkeye",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/e/90/50fecaf4f101b",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, 
+			
+			
+			
+			{
+				"id": 1009362,
+				"name": "Iceman",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/1/d0/52696c836898c",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1011346,
+				"name": "Ben Reilly",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/2/20/4ce5a6abaea69",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009306,
+				"name": "Firestar",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/7/03/526032b8247e8",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009494,
+				"name": "Pepper Potts",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/c/f0/4ce188e09af9c",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009182,
+				"name": "Bishop",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/70/52602f4b42d98",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009184,
+				"name": "Black Bolt",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/1/20/52696929dc721",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009504,
+				"name": "Professor X",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/e0/528d3378de525",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009185,
+				"name": "Black Cat",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/e/03/526952357d91c",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009187,
+				"name": "Black Panther",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/60/5261a80a67e7d",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009214,
+				"name": "Cable",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/90/526165df2b584",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009223,
+				"name": "Captain Britain",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/50/4dbf0e5d57226",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009243,
+				"name": "Colossus",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/e0/51127cf4b996f",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009546,
+				"name": "Rogue",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/10/5112d84e2166c",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009466,
+				"name": "Namor",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/e/90/50febf4ae101d",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1010925,
+				"name": "Ghost Rider (Daniel Ketch)",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/c/50/535feaa671cc6",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009592,
+				"name": "Silver Surfer",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/527bb6490a176",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009515,
+				"name": "Punisher",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/90/5261675f6b22f",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009367,
+				"name": "Iron Fist (Danny Rand)",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/f0/52616788ebc63",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009215,
+				"name": "Luke Cage",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/a0/5112d8b6e596c",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009471,
+				"name": "Nick Fury",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/3/c0/5261a745e658d",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009472,
+				"name": "Nightcrawler",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/1/40/526034979bc98",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1017111,
+				"name": "She-Hulk (HAS)",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/8/d0/523214b8ea2cf",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009477,
+				"name": "Nova",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/1/00/51756578d2a75",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1011020,
+				"name": "Darkhawk",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/a0/5269553f4bc6a",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009590,
+				"name": "Silver Sable",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/60/535ff3a373ec3",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009512,
+				"name": "Psylocke",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/1/50/526961ce86539",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009524,
+				"name": "Quicksilver",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/f0/53176ffc42f58",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009562,
+				"name": "Scarlet Witch",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/6/70/5261a7d7c394b",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1010744,
+				"name": "Rocket Raccoon",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/50fec1e49298a",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009608,
+				"name": "Spider-Woman (Jessica Drew)",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/b/50/5265479097743",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1010350,
+				"name": "Valkyrie (Samantha Parrington)",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/c/00/535fed8a3a00f",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009697,
+				"name": "Vision",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/9/d0/5111527040594",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1010991,
+				"name": "War Machine (Parnell Jacobs)",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/c/f0/535febf826de5",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009378,
+				"name": "Jessica Jones",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/d/00/5390e41260345",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009343,
+				"name": "Hercules",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/b/d0/52052ebddfa53",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}, {
+				"id": 1009539,
+				"name": "Franklin Richards",
+				"thumbnail": {
+					"path": "http://i.annihil.us/u/prod/marvel/i/mg/f/00/535fedbaaf234",
+					"extension": "jpg"
+				},
+				"type": "top_hero"
+			}
+		]
+	}
+}

@@ -1,0 +1,619 @@
+﻿{
+    "code": 200,
+    "status": "Ok",
+    "copyright": "© 2017 MARVEL",
+    "attributionText": "Data provided by Marvel. © 2017 MARVEL",
+    "attributionHTML": "<a href=\"http://marvel.com\">Data provided by Marvel. © 2017 MARVEL</a>",
+    "etag": "192d5ade8c24d0426c828021daa431f655f4d3d9",
+    "data": {
+        "offset": 0,
+        "limit": 100,
+        "total": 22,
+        "count": 22,
+        "results": [
+            {
+                "id": 1009417,
+                "name": "Magneto",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/b0/5261a7e53f827",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009652,
+                "name": "Thanos",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/40/5274137e3e2cd",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009407,
+                "name": "Loki",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/90/526547f509313",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009685,
+                "name": "Ultron",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/70/5261a838e93c0",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009227,
+                "name": "Carnage",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/50/535fee423f170",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009312,
+                "name": "Galactus",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/03/528d31a791308",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1011323,
+                "name": "Sentinels",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/50/4ce5a66693659",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009156,
+                "name": "Apocalypse",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/e0/526166076a1d0",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009663,
+                "name": "Venom (Flash Thompson)",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/80/5269668c7d5df",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1014985,
+                "name": "Green Goblin (Barry Norman Osborn)",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/f0/4cd05ee55faa2",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009535,
+                "name": "Red Skull",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/03/526036550cd37",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009465,
+                "name": "Mystique",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/03/5390dc2225782",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009382,
+                "name": "Juggernaut",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/c0/528d340442cca",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009479,
+                "name": "Otto Octavius",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009554,
+                "name": "Sabretooth",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/1/00/4ce1895117793",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009389,
+                "name": "Kingpin",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/60/526034fb5aff7",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009447,
+                "name": "Mister Sinister",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/80/526034ac3c53a",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009212,
+                "name": "Bullseye",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/30/539a08f322fd1",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009421,
+                "name": "Mandarin",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/50/535feda892f68",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009146,
+                "name": "Abomination (Emil Blonsky)",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/50/4ce18691cbf04",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1010740,
+                "name": "Winter Soldier",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/03/5265478293c1e",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009648,
+                "name": "Taskmaster",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/c0/526957dc0c27f",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1010344,
+                "name": "Ronan",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/f0/5260363fc40f2",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009509,
+                "name": "Madelyne Pryor",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/50/528d33ddaef70",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009568,
+                "name": "Selene",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/d0/4c003c337aff5",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1011305,
+                "name": "Maximus",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/80/52740f7c6f0b7",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009464,
+                "name": "Mysterio",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/70/4ce5a083d8346",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009391,
+                "name": "Kraven the Hunter",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/e0/527410063de71",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009440,
+                "name": "Mephisto",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/40/526034d178ddc",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009639,
+                "name": "Super-Skrull",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/5274138fe6deb",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009483,
+                "name": "Onslaught",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/60/535febc427605",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009384,
+                "name": "Kang",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/30/52695ed19538d",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009558,
+                "name": "Sandman",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009393,
+                "name": "Lady Deathstrike",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/60/535ff2c1ef191",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009347,
+                "name": "Hobgoblin (Roderick Kingsley)",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/c/80/4c003ed3cff99",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1011360,
+                "name": "Red Hulk",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/90/5102cb7fc1262",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009482,
+                "name": "Omega Red",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/d0/4c003d09267ae",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009170,
+                "name": "Baron Zemo (Heinrich Zemo)",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/60/4c0041f84c9fe",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009537,
+                "name": "Rhino",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/60/4c003c58f1a0c",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1010726,
+                "name": "M.O.D.O.K.",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/0/03/526034ba37851",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009591,
+                "name": "Silver Samurai",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/50/4c003c13058bd",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009252,
+                "name": "Crossbones",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/1/c0/4c00405a403c0",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009154,
+                "name": "Annihilus",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/f0/528d31f20a2f6",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1010365,
+                "name": "Nebula",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/30/528d339973337",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009398,
+                "name": "Leader",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/c0/52b0d25c3dbb9",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009699,
+                "name": "Vulture (Adrian Toomes)",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/4c003a7929d28",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009573,
+                "name": "Shadow King",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/30/4ce5a16fd4182",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009321,
+                "name": "Gladiator (Kallark)",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/03/52696b33b7920",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009148,
+                "name": "Absorbing Man",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/1/b0/5269678709fb7",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009190,
+                "name": "Blackheart",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/f0/4c0040a0ee5ba",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },            
+            {
+                "id": 1011300,
+                "name": "High Evolutionary",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/f0/5269583a77bd3",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1011019,
+                "name": "Molecule Man",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/d0/528d33c2a72b2",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009169,
+                "name": "Baron Strucker",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/80/4c0041fb5a90d",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1011328,
+                "name": "Maestro",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/30/4d278ee344785",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1010369,
+                "name": "Typhoid Mary",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/1/f0/4c00390aa2403",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009251,
+                "name": "Crimson Dynamo",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/b0/526955e3c7c41",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009449,
+                "name": "Mole Man",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/60/4c003d3176a50",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1010362,
+                "name": "Moonstone",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/00/535ff3e867252",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009158,
+                "name": "Arcade",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/a0/4c0042091ab69",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009519,
+                "name": "Puppet Master",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/40/4c003c738f74c",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009740,
+                "name": "Arnim Zola",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/b0/4c00393a4cb7c",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1011074,
+                "name": "Lilith",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/e0/52740fe6287e4",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009328,
+                "name": "Grim Reaper",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/b0/4c003ee8885e4",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1011028,
+                "name": "Owl",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/40/4ce5a45d60e63",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009633,
+                "name": "William Stryker",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/90/4c003abcc72e7",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1009587,
+                "name": "Shriek",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/8/03/528d36b054844",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            },
+            {
+                "id": 1010352,
+                "name": "Madame Masque",
+                "thumbnail": {
+                    "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/00/4ce5a251c1100",
+                    "extension": "jpg"
+                },
+                "type": "top_villain"
+            }
+        ]
+    }
+}

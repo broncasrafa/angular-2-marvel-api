@@ -1,3 +1,16 @@
 <div class="container">
-lista de personagens iniciais
+
+  <div class="row pad-row text-center">
+    <h2>Top Characters</h2>
+
+    <div class="col-md-3 col-sm-3 col-xs-6" *ngFor="let c of characters">
+      <img src="{{ c.thumbnail.path }}.{{ c.thumbnail.extension }}" class="img-responsive img-circle pad-img" alt="{{ c.name }}" />
+      <h4>
+        <a href="character/{{ c.id }}">{{ c.name }}</a>
+      </h4>      
+    </div>
+
+  </div>
+
+
 </div>

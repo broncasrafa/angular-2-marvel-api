@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComicsService } from './comics.service';
 
 @Component({
   selector: 'app-comics',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComicsComponent implements OnInit {
 
-  constructor() { }
+  comics = new Array<Object>();
+
+  constructor(private comicsService: ComicsService) { }
 
   ngOnInit() {
+    this.comicsService.indexComics().then(resp => {
+      this.comics = resp;
+    });
   }
 
 }
