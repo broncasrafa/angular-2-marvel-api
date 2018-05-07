@@ -33,7 +33,7 @@ export class ComicsService {
     const url = `${this.baseUrl}/comics/${id}?apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}`;
     return this.http.get(url)
                     .toPromise()
-                    .then(response => response.json().data.results)
+                    .then(response => response.json().data.results[0])
                     .catch(this.handleError);
   }
 
