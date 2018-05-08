@@ -1,3 +1,37 @@
-<p>
-  character-stories works!
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+          <div style="padding: 0 15px 0 13px;">
+              <div style="height: 140px; width: 140px; border-radius: 50%; background-color: #dfe5e7;">
+                <img src="{{ character.thumbnail.path }}/standard_xlarge.{{ character.thumbnail.extension }}" class="img img-circle img-responsive"/>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="text-left">
+            <h3>{{ character.name }}</h3>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+  <h2 class="sub-header">Stories</h2>
+  <div class="row">
+      <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of stories">
+        <ul>
+          <li>
+              <h4>
+                  <a href="storie/{{ c.id }}">
+                    {{ c.title }}
+                  </a>
+              </h4>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class="row">
+      <div class="text-center" style="padding-top: 50px;">
+          <button class="btn btn-default" (click)="loadMoreStories(offset)">Mais</button>
+        </div>
+  </div>
+</div>

@@ -1,3 +1,35 @@
-<p>
-  character-events works!
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+          <div style="padding: 0 15px 0 13px;">
+              <div style="height: 140px; width: 140px; border-radius: 50%; background-color: #dfe5e7;">
+                <img src="{{ character.thumbnail.path }}/standard_xlarge.{{ character.thumbnail.extension }}" class="img img-circle img-responsive"/>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="text-left">
+            <h3>{{ character.name }}</h3>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+    <h2 class="sub-header">Events</h2>
+    <div class="row">
+      <ul class="thumbnails" id="thumbnails">
+        <li *ngFor="let c of events" class="col-md-3 col-sm-3 col-xs-12">
+          <a class="thumbnail" href="event/{{ c.id }}">
+            <img src="{{ c.thumbnail.path}}/portrait_uncanny.{{ c.thumbnail.extension }}" alt="{{ c.title }}"/>
+            <p>{{ c.title }}</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+        <div class="text-center">
+            <button class="btn btn-default" (click)="loadMoreEvents(offset)">Mais</button>
+          </div>
+    </div>
+
+</div>

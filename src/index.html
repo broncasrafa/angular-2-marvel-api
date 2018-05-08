@@ -10,10 +10,28 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
+
 
   <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <style type="text/css">
+     .nav-link.home img {
+        position: relative;
+        margin-top: -21px;
+        top: 12px;
+        height: 40px;
+    }/*
+    .navbar-default {
+      color: rgb(255, 255, 255) !important;
+      background: rgb(25, 118, 210) !important;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+      background: rgb(25, 118, 210) !important;
+    } */
+  </style>
 </head>
 
 <body style="min-height: 2000px; padding-top: 70px;">
@@ -26,7 +44,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="search">Ng2-Marvel Super Heroes</a>
+          <a class="navbar-brand nav-link home" href="search">
+              <img alt="Home" height="40" src="./assets/img/ANGULAR.png" title="Home" width="150" class="ng-star-inserted">
+          </a>
+
       </div>
 
       <div class="navbar-collapse collapse" id="navbar">
@@ -48,7 +69,7 @@
   </nav>
 
   <app-marvel-heroes></app-marvel-heroes>
-    
+
 </body>
 
 </html>

@@ -8,9 +8,6 @@ import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/forkJoin';
 
-
-
-
 @Injectable()
 export class CharactersService {
 
@@ -48,10 +45,15 @@ export class CharactersService {
 
   otherDetailsCharacter(id: number) {
 
-    const urlCharacterComics = `${this.baseUrl}/characters/${id}/comics?apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}&limit=4`;
-    const urlCharacterEvents = `${this.baseUrl}/characters/${id}/events?apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}&limit=4`;
-    const urlCharacterSeries = `${this.baseUrl}/characters/${id}/series?apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}&limit=4`;
-    const urlCharacterStories = `${this.baseUrl}/characters/${id}/stories?apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}&limit=4`;
+    let credentials: string;
+    credentials = `apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}`;
+
+    const comicsParameters = `limit=4&format=comic&formatType=comic&startYear=2017`;
+
+    const urlCharacterComics = `${this.baseUrl}/characters/${id}/comics?${credentials}&${comicsParameters}`;
+    const urlCharacterEvents = `${this.baseUrl}/characters/${id}/events?${credentials}&limit=4`;
+    const urlCharacterSeries = `${this.baseUrl}/characters/${id}/series?${credentials}&limit=4`;
+    const urlCharacterStories = `${this.baseUrl}/characters/${id}/stories?${credentials}&limit=4`;
 
     const req1 = this.http.get(urlCharacterComics).map(res => res.json().data.results);
     const req2 = this.http.get(urlCharacterEvents).map(res => res.json().data.results);
@@ -61,6 +63,61 @@ export class CharactersService {
     return forkJoin([req1, req2, req3, req4]);
 
   }
+
+  charactersComics(id: number, offset: number) {
+    let credentials: string;
+    credentials = `apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}`;
+
+    const comicsParameters = `limit=24&offset=${offset}&format=comic&formatType=comic&orderBy=title`;
+    const url = `${this.baseUrl}/characters/${id}/comics?${credentials}&${comicsParameters}`;
+
+    return this.http.get(url)
+                    .toPromise()
+                    .then(resp => resp.json().data.results)
+                    .catch(this.handleError);
+  }
+
+  charactersEvents(id: number, offset: number) {
+    let credentials: string;
+    credentials = `apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}`;
+
+    const eventsParameters = `limit=24&offset=${offset}&orderBy=name`;
+    const url = `${this.baseUrl}/characters/${id}/events?${credentials}&${eventsParameters}`;
+
+    return this.http.get(url)
+                    .toPromise()
+                    .then(resp => resp.json().data.results)
+                    .catch(this.handleError);
+  }
+
+  charactersSeries(id: number, offset: number) {
+    let credentials: string;
+    credentials = `apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}`;
+
+    const seriesParameters = `limit=24&offset=${offset}&orderBy=startYear`;
+    const url = `${this.baseUrl}/characters/${id}/series?${credentials}&${seriesParameters}`;
+
+    return this.http.get(url)
+                    .toPromise()
+                    .then(resp => resp.json().data.results)
+                    .catch(this.handleError);
+  }
+
+  charactersStories(id: number, offset: number) {
+    let credentials: string;
+    credentials = `apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}`;
+
+    const storiesParameters = `limit=24&offset=${offset}&orderBy=id`;
+    const url = `${this.baseUrl}/characters/${id}/stories?${credentials}&${storiesParameters}`;
+
+    return this.http.get(url)
+                    .toPromise()
+                    .then(resp => resp.json().data.results)
+                    .catch(this.handleError);
+  }
+
+
+
 
   private handleError(err: any): Promise<any> {
     return Promise.reject(err.message || err);
