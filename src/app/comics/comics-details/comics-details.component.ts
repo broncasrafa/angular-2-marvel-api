@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ComicsService } from './comics.service';
-import { Comic } from '../models/comic';
+import { ComicsService } from '../comics.service';
+import { Comic } from '../../models/comic';
 
 @Component({
   selector: 'app-comics-details',

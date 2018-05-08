@@ -9,7 +9,7 @@ import { Character } from '../models/character';
 })
 export class CharactersComponent implements OnInit {
 
-  characters = new Array<Object>();
+  characters = new Array<Character>();
 
   constructor(private characterService: CharactersService) { }
 

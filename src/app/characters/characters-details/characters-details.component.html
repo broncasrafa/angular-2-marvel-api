@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="row featurette">
+    <div class="col-md-7 col-md-push-5">
+      <h2 class="featurette-heading">
+        {{ character.name }}
+      </h2>
+      <p class="lead">
+          {{ character.description }}
+      </p>
+    </div>
+    <div class="col-md-5 col-md-pull-7">
+      <img class="featurette-image img-responsive center-block" data-src="{{ character.thumbnail.path }}.{{ character.thumbnail.extension }}" alt="{{ character.name }}">
+    </div>
+  </div>
+
+  <hr class="featurette-divider" />
+
+  <h2 class="sub-header">Comics</h2>
+  <div class="row">
+    <ul class="thumbnails" id="thumbnails">
+      <li *ngFor="let c of someComics" class="col-md-3 col-sm-3 col-xs-12">
+        <a class="thumbnail" href="comic/{{ c.id }}">
+          <img src="{{ c.thumbnail.path}}/portrait_uncanny.{{ c.thumbnail.extension }}" alt="{{ c.title }}"/>
+          <p>{{ c.title }}</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+      <div class="text-center">
+          <a class="btn btn-default" href="/character-comics/{{ character.id }}">Mais</a>
+        </div>
+  </div>
+
+  <hr class="featurette-divider" />
+
+  <h2 class="sub-header">Events</h2>
+  <div class="row">
+    <ul class="thumbnails" id="thumbnails">
+      <li *ngFor="let c of someEvents" class="col-md-3 col-sm-3 col-xs-12">
+        <a class="thumbnail" href="event/{{ c.id }}">
+          <img src="{{ c.thumbnail.path}}/portrait_uncanny.{{ c.thumbnail.extension }}" alt="{{ c.title }}"/>
+          <p>{{ c.title }}</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+      <div class="text-center">
+          <a class="btn btn-default" href="/character-events/{{ character.id }}">Mais</a>
+        </div>
+  </div>
+
+
+  <hr class="featurette-divider" />
+
+  <h2 class="sub-header">Series</h2>
+  <div class="row">
+    <ul class="thumbnails" id="thumbnails">
+      <li *ngFor="let c of someSeries" class="col-md-3 col-sm-3 col-xs-12">
+        <a class="thumbnail" href="serie/{{ c.id }}">
+          <img src="{{ c.thumbnail.path}}/portrait_uncanny.{{ c.thumbnail.extension }}" alt="{{ c.title }}"/>
+          <p>{{ c.title }}</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+      <div class="text-center">
+          <a class="btn btn-default" href="/character-series/{{ character.id }}">Mais</a>
+        </div>
+  </div>
+
+  <hr class="featurette-divider" />
+
+  <h2 class="sub-header">Stories</h2>
+  <div class="row">
+    <div class="col-xs-6 col-lg-4" *ngFor="let s of someStories">
+      <a href="storie/{{ s.id }}">{{ s.title }}</a>
+      <br />
+    </div>
+  </div>
+  <div class="row">
+    <div class="text-center">
+      <a class="btn btn-default" href="/character-stories/{{ character.id }}">Mais</a>
+    </div>
+  </div>
+
+</div>

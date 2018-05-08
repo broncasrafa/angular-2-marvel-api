@@ -20,3 +20,22 @@
  .featurette-image.pull-right {
   margin-left: 40px;
 }
+
+.thumbnails {
+  list-style: none;
+  padding: 0;
+}
+
+.thumbnails li a.thumbnail {
+  border: none;
+  padding: 0;
+  margin-bottom: 30px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+  background: none;
+}

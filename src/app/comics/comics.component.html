@@ -3,7 +3,7 @@
     <ul class="thumbnails" id="thumbnails">
       <li *ngFor="let c of comics" class="col-md-3 col-sm-3 col-xs-12">
         <a class="thumbnail" href="comic/{{ c.id }}">
-          <img src="{{ c.thumbnail.path}}.{{ c.thumbnail.extension }}" alt="{{ c.title }}"/>
+          <img src="{{ c.thumbnail.path}}/portrait_uncanny.{{ c.thumbnail.extension }}" alt="{{ c.title }}"/>
           <p>{{ c.title }}</p>
         </a>
       </li>

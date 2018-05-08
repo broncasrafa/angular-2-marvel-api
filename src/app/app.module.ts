@@ -10,24 +10,29 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { SearchComponent } from './search/search.component';
+import { FooterComponent } from './footer/footer.component';
 
 import { CharactersComponent } from './characters/characters.component';
-import { CharactersDetailsComponent } from './characters/characters-details.component';
+import { CharactersDetailsComponent } from './characters/characters-details/characters-details.component';
+import { CharacterComicsComponent } from './characters/character-comics/character-comics.component';
+import { CharacterEventsComponent } from './characters/character-events/character-events.component';
+import { CharacterSeriesComponent } from './characters/character-series/character-series.component';
+import { CharacterStoriesComponent } from './characters/character-stories/character-stories.component';
 
 import { ComicsComponent } from './comics/comics.component';
-import { ComicsDetailsComponent } from './comics/comics-details.component';
+import { ComicsDetailsComponent } from './comics/comics-details/comics-details.component';
 
 import { SeriesComponent } from './series/series.component';
-import { SeriesDetailsComponent } from './series/series-details.component';
+import { SeriesDetailsComponent } from './series/series-details/series-details.component';
 
 import { StoriesComponent } from './stories/stories.component';
-import { StoriesDetailsComponent } from './stories/stories-details.component';
+import { StoriesDetailsComponent } from './stories/stories-details/stories-details.component';
 
 import { CreatorsComponent } from './creators/creators.component';
-import { CreatorsDetailsComponent } from './creators/creators-details.component';
+import { CreatorsDetailsComponent } from './creators/creators-details/creators-details.component';
 
 import { EventsComponent } from './events/events.component';
-import { EventsDetailsComponent } from './events/events-details.component';
+import { EventsDetailsComponent } from './events/events-details/events-details.component';
 
 import { CharactersService } from './characters/characters.service';
 import { ComicsService } from './comics/comics.service';
@@ -38,24 +43,37 @@ import { StoriesService } from './stories/stories.service';
 import { SearchService } from './search/search.service';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    CharactersComponent,
-    ComicsComponent,
-    SeriesComponent,
-    StoriesComponent,
-    CreatorsComponent,
-    EventsComponent,
     SearchComponent,
     HomeComponent,
     AboutComponent,
+    FooterComponent,
+
+    CharactersComponent,
     CharactersDetailsComponent,
+    CharacterComicsComponent,
+    CharacterEventsComponent,
+    CharacterSeriesComponent,
+    CharacterStoriesComponent,
+
+    ComicsComponent,
     ComicsDetailsComponent,
-    CreatorsDetailsComponent,
-    EventsDetailsComponent,
+
+    SeriesComponent,
     SeriesDetailsComponent,
-    StoriesDetailsComponent
+
+    StoriesComponent,
+    StoriesDetailsComponent,
+
+    CreatorsComponent,
+    CreatorsDetailsComponent,
+
+    EventsComponent,
+    EventsDetailsComponent
   ],
   imports: [
     BrowserModule,
