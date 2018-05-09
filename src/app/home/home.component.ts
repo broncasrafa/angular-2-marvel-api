@@ -2,14 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
+  template: `<app-search-characters [childMessage]='parentMessage'></app-search-characters>`,
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
+  parentMessage = 'characters';
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }

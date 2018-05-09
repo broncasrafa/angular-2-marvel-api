@@ -1,3 +1,18 @@
-<p>
-  series works!
-</p>
+<div class="container">
+
+  <div class="row pad-row text-center">
+    <h2>Series</h2>
+
+    <div class="col-md-3 col-sm-3 col-xs-6" *ngFor="let c of series">
+        <a href="serie/{{ c.id }}">
+          <img src="{{ c.thumbnail.path }}/standard_xlarge.{{ c.thumbnail.extension }}" class="img-responsive img-circle pad-img" alt="{{ c.title }}" />
+        </a>
+      <h4>
+        <a href="serie/{{ c.id }}">{{ c.title }}</a>
+      </h4>
+    </div>
+
+  </div>
+
+
+</div>

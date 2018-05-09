@@ -9,12 +9,15 @@ import { ComicsService } from './comics.service';
 export class ComicsComponent implements OnInit {
 
   comics = new Array<Object>();
+  isLoading = false;
 
   constructor(private comicsService: ComicsService) { }
 
   ngOnInit() {
+    this.isLoading = true;
     this.comicsService.indexComics().then(resp => {
       this.comics = resp;
+      this.isLoading = false;
     });
   }
 

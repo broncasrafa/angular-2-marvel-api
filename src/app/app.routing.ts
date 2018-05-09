@@ -20,6 +20,9 @@ import { EventsComponent } from './events/events.component';
 import { EventsDetailsComponent } from './events/events-details/events-details.component';
 
 
+import { TesteTypescriptComponent } from './teste-typescript/teste-typescript.component';
+
+
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'search', component: HomeComponent },
@@ -31,7 +34,7 @@ const appRoutes: Routes = [
   { path: 'character-comics/:id', component: CharacterComicsComponent },
   { path: 'character-events/:id', component: CharacterEventsComponent },
   { path: 'character-series/:id', component: CharacterSeriesComponent },
-  { path: 'character-stories/:id', component: CharacterStoriesComponent }
+  { path: 'character-stories/:id', component: CharacterStoriesComponent },
 
   { path: 'comics', component: ComicsComponent },
   { path: 'comic/:id', component: ComicsDetailsComponent },
@@ -46,7 +49,9 @@ const appRoutes: Routes = [
   { path: 'serie/:id', component: SeriesDetailsComponent },
 
   { path: 'stories', component: StoriesComponent },
-  { path: 'storie/:id', component: StoriesDetailsComponent }
+  { path: 'storie/:id', component: StoriesDetailsComponent },
+
+  { path: 'testes', component: TesteTypescriptComponent}
 ];
 
 export const appRoutingProviders: any[] = [];

@@ -17,6 +17,7 @@ export class Creator {
   stories: ResourceList;
   events: ResourceList;
   urls: Array<Url>;
+  name: string;
 
   constructor() {
     this.thumbnail = new Thumbnail();
@@ -25,5 +26,6 @@ export class Creator {
     this.stories = new ResourceList();
     this.events = new ResourceList();
     this.urls = new Array<Url>();
+    this.name = `${this.firstName} ${this.middleName} ${this.lastName}`;
   }
 }

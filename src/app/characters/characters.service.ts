@@ -7,6 +7,7 @@ import { Character } from '../models/character';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/forkJoin';
+import { Helpers } from '../app.helpers';
 
 @Injectable()
 export class CharactersService {
@@ -29,7 +30,7 @@ export class CharactersService {
     return this.http.get(urlIndex)
                     .toPromise()
                     .then(response => response.json().data.results)
-                    .catch(this.handleError);
+                    .catch(Helpers.handleError);
   }
 
 
@@ -40,7 +41,7 @@ export class CharactersService {
     return this.http.get(url)
                     .toPromise()
                     .then(response => response.json().data.results[0])
-                    .catch(this.handleError);
+                    .catch(Helpers.handleError);
   }
 
   otherDetailsCharacter(id: number) {
@@ -74,7 +75,7 @@ export class CharactersService {
     return this.http.get(url)
                     .toPromise()
                     .then(resp => resp.json().data.results)
-                    .catch(this.handleError);
+                    .catch(Helpers.handleError);
   }
 
   charactersEvents(id: number, offset: number) {
@@ -87,7 +88,7 @@ export class CharactersService {
     return this.http.get(url)
                     .toPromise()
                     .then(resp => resp.json().data.results)
-                    .catch(this.handleError);
+                    .catch(Helpers.handleError);
   }
 
   charactersSeries(id: number, offset: number) {
@@ -100,7 +101,7 @@ export class CharactersService {
     return this.http.get(url)
                     .toPromise()
                     .then(resp => resp.json().data.results)
-                    .catch(this.handleError);
+                    .catch(Helpers.handleError);
   }
 
   charactersStories(id: number, offset: number) {
@@ -113,13 +114,7 @@ export class CharactersService {
     return this.http.get(url)
                     .toPromise()
                     .then(resp => resp.json().data.results)
-                    .catch(this.handleError);
+                    .catch(Helpers.handleError);
   }
 
-
-
-
-  private handleError(err: any): Promise<any> {
-    return Promise.reject(err.message || err);
-  }
 }

@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { CharactersService } from '../characters.service';
 import { Event } from '../../models/event';
 import { Character } from '../../models/character';
+import { Helpers } from '../../app.helpers';
 
 @Component({
   selector: 'app-character-events',
@@ -15,6 +16,9 @@ export class CharacterEventsComponent implements OnInit {
   character = new Character();
   offset: number;
   id: number;
+  isLoading = false;
+  spinner: string;
+  loadMore = false;
 
   constructor(private charactersService: CharactersService,
               private route: ActivatedRoute,
@@ -24,12 +28,17 @@ export class CharacterEventsComponent implements OnInit {
     this.offset = 0;
     this.id = +this.route.snapshot.params['id'];
 
+    this.spinner = Helpers.getSpinner();
+    this.isLoading = true;
+
     this.charactersService.detailsCharacter(this.id).then(characterResponse => {
       this.character = characterResponse;
     });
 
     this.charactersService.charactersEvents(this.id, this.offset).then(resp => {
       this.events = resp;
+      this.isLoading = false;
+      this.loadMore = true;
     });
   }
 

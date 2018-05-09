@@ -41,6 +41,7 @@ import { EventsService } from './events/events.service';
 import { SeriesService } from './series/series.service';
 import { StoriesService } from './stories/stories.service';
 import { SearchService } from './search/search.service';
+import { TesteTypescriptComponent } from './teste-typescript/teste-typescript.component';
 
 
 
@@ -73,7 +74,8 @@ import { SearchService } from './search/search.service';
     CreatorsDetailsComponent,
 
     EventsComponent,
-    EventsDetailsComponent
+    EventsDetailsComponent,
+    TesteTypescriptComponent
   ],
   imports: [
     BrowserModule,

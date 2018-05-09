@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { marvelAppSettings } from '../app.marvel.settings';
+import { Helpers } from '../app.helpers';
 
 @Injectable()
 export class ComicsService {
@@ -26,7 +27,7 @@ export class ComicsService {
     return this.http.get(url)
                     .toPromise()
                     .then(response => response.json().data.results)
-                    .catch(this.handleError);
+                    .catch(Helpers.handleError);
   }
 
   detailsComics(id: number) {
@@ -34,7 +35,7 @@ export class ComicsService {
     return this.http.get(url)
                     .toPromise()
                     .then(response => response.json().data.results[0])
-                    .catch(this.handleError);
+                    .catch(Helpers.handleError);
   }
 
 
@@ -48,7 +49,11 @@ export class ComicsService {
     let endDate: string;
     let dateRange: string;
 
-    year = this.date.getFullYear();
+    const max = new Date().getFullYear();
+    const min = 1970;
+    const yearRandom = Math.floor(Math.random() * (max - min + 1) + min);
+
+    year = yearRandom;
     startDate = `${year}-01-01`;
     endDate = `${year}-12-31`;
     dateRange = `${startDate},${endDate}`;
@@ -56,7 +61,4 @@ export class ComicsService {
     return dateRange;
   }
 
-  private handleError(err: any): Promise<any> {
-    return Promise.reject(err.message || err);
-  }
 }

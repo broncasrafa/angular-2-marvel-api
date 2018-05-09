@@ -7,9 +7,17 @@
         <a href="character/{{ c.id }}"><img src="{{ c.thumbnail.path }}/standard_xlarge.{{ c.thumbnail.extension }}" class="img-responsive img-circle pad-img" alt="{{ c.name }}" /></a>
       <h4>
         <a href="character/{{ c.id }}">{{ c.name }}</a>
-      </h4>      
+      </h4>
     </div>
 
+  </div>
+  <!-- Spinners -->
+  <div class="row" *ngIf="isLoading">
+      <div class="text-center">
+        <img src="{{ spinner }}" height="150" width="150" />
+        <br />
+        <h3>Carregando...</h3>
+      </div>
   </div>
 
 

@@ -17,6 +17,13 @@
       <br />
     <h2 class="sub-header">Series</h2>
     <div class="row">
+      <!-- Spinners -->
+      <div class="text-center" *ngIf="isLoading">
+          <img src="{{ spinner }}" height="150" width="150" />
+          <br />
+          <h3>Carregando...</h3>
+        </div>
+
       <ul class="thumbnails" id="thumbnails">
         <li *ngFor="let c of series" class="col-md-3 col-sm-3 col-xs-12">
           <a class="thumbnail" href="serie/{{ c.id }}">
@@ -26,7 +33,7 @@
         </li>
       </ul>
     </div>
-    <div class="row">
+    <div class="row" *ngIf="loadMore">
         <div class="text-center">
             <button class="btn btn-default" (click)="loadMoreSeries(offset)">Mais</button>
           </div>

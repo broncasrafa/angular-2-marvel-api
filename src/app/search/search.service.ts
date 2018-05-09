@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { marvelAppSettings } from '../app.marvel.settings';
+import { Helpers } from '../app.helpers';
 
 @Injectable()
 export class SearchService {
@@ -19,10 +20,43 @@ export class SearchService {
     return this.http.get(url)
                     .toPromise()
                     .then(response => response.json().data.results)
-                    .catch(this.handleError);
+                    .catch(Helpers.handleError);
   }
 
-  private handleError(err: any): Promise<any> {
-    return Promise.reject(err.message || err);
+  searchComics(name: string) {
+    const url = `${this.baseUrl}/comics?titleStartsWith=${name}&apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}`;
+
+    return this.http.get(url)
+                    .toPromise()
+                    .then(response => response.json().data.results)
+                    .catch(Helpers.handleError);
   }
+
+  searchCreators(name: string) {
+    const url = `${this.baseUrl}/creators?nameStartsWith=${name}&apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}`;
+
+    return this.http.get(url)
+                    .toPromise()
+                    .then(response => response.json().data.results)
+                    .catch(Helpers.handleError);
+  }
+
+  searchSeries(name: string) {
+    const url = `${this.baseUrl}/series?titleStartsWith=${name}&apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}`;
+
+    return this.http.get(url)
+                    .toPromise()
+                    .then(response => response.json().data.results)
+                    .catch(Helpers.handleError);
+  }
+
+  searchEvents(name: string) {
+    const url = `${this.baseUrl}/events?nameStartsWith=${name}&apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}`;
+
+    return this.http.get(url)
+                    .toPromise()
+                    .then(response => response.json().data.results)
+                    .catch(Helpers.handleError);
+  }
+
 }
