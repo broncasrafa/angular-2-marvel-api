@@ -15,7 +15,7 @@ export class EventsService {
   constructor(private http: Http) { }
 
   indexEvents() {
-    const url = `${this.baseUrl}/events?apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}&limit=44`;
+    const url = `${this.baseUrl}/events?apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}&limit=24`;
 
     return this.http
                .get(url)

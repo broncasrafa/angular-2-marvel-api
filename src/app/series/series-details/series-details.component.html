@@ -1,3 +1,64 @@
-<p>
-  series-details works!
-</p>
+<div class="container">
+  <div class="row" *ngIf="hasErrors">
+    <div class="alert alert-danger">
+      {{ errors.status }}
+    </div>
+  </div>
+
+  <div class="row">
+    <h3 class="page-header"> {{ serie.title }}</h3>
+    <p class="lead">
+      {{ serie.description }}
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+      <ul class="thumbnails" id="thumbnails">
+          <li>
+            <a class="thumbnail" href="#" style="cursor: none">
+              <img src="{{ serie.thumbnail.path }}/portrait_incredible.{{ serie.thumbnail.extension }}" alt=""/>
+            </a>
+          </li>
+        </ul>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-8">
+      <p><b>Start Year</b>: {{ serie.startYear }}</p>
+      <p><b>End Year</b>: {{ serie.endYear }}</p>
+      <p><b>Rating</b>: {{ serie.rating }}</p>
+      <p><b>Modified</b>: {{ serie.modified }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <h3 class="page-header">Creators</h3>
+    <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of serie.creators.items">
+        {{ c.name }} - {{ c.role }}
+    </div>
+  </div>
+  <div class="row">
+    <h3 class="page-header">Characters</h3>
+    <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of serie.characters.items">
+        {{ c.name }}
+    </div>
+  </div>
+  <div class="row">
+    <h3 class="page-header">Stories</h3>
+    <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of serie.stories.items">
+        {{ c.name }}
+    </div>
+  </div>
+  <div class="row">
+    <h3 class="page-header">Comics</h3>
+    <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of serie.comics.items">
+        {{ c.name }}
+    </div>
+  </div>
+  <div class="row">
+    <h3 class="page-header">Events</h3>
+    <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of serie.events.items">
+        {{ c.name }}
+    </div>
+  </div>
+</div>
+
+
+

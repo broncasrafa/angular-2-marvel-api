@@ -8,19 +8,19 @@
 <div class="row">
   <div class="input-group">
     <label class="radio-inline">
-      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="characters" [(ngModel)]="typeSearch"> Characters
+      <input type="radio" name="tipoBusca" id="tipoBusca1" value="characters" [(ngModel)]="typeSearch"> Characters
     </label>
     <label class="radio-inline">
-      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="comics" [(ngModel)]="typeSearch"> Comics
+      <input type="radio" name="tipoBusca" id="tipoBusca2" value="comics" [(ngModel)]="typeSearch"> Comics
     </label>
     <label class="radio-inline">
-      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="series" [(ngModel)]="typeSearch"> Series
+      <input type="radio" name="tipoBusca" id="tipoBusca3" value="series" [(ngModel)]="typeSearch"> Series
     </label>
     <label class="radio-inline">
-      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="creators" [(ngModel)]="typeSearch"> Creators
+      <input type="radio" name="tipoBusca" id="tipoBusca3" value="creators" [(ngModel)]="typeSearch"> Creators
     </label>
     <label class="radio-inline">
-      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="events" [(ngModel)]="typeSearch"> Events
+      <input type="radio" name="tipoBusca" id="tipoBusca3" value="events" [(ngModel)]="typeSearch"> Events
     </label>
   </div>
 </div>
@@ -36,7 +36,7 @@
   </div>
 
   <!-- Spinners -->
-  <div class="row" *ngIf="isLoading">
+  <div class="row" *ngIf="isLoading" style="padding-top:40px">
       <div class="text-center">
         <img src="../{{ spinner }}" height="150" width="150" />
         <br />

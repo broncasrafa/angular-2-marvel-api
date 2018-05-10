@@ -1,5 +1,14 @@
 <div class="container">
 
+<!-- Spinners -->
+<div class="row" *ngIf="isLoading">
+    <div class="text-center">
+      <img src="{{ spinner }}" height="150" width="150" />
+      <br />
+      <h3>Carregando...</h3>
+    </div>
+</div>
+
   <div class="row pad-row text-center">
     <h2>Events</h2>
 

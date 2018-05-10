@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ComicsService } from './comics.service';
+import { Helpers } from '../app.helpers';
 
 @Component({
   selector: 'app-comics',
@@ -10,11 +11,14 @@ export class ComicsComponent implements OnInit {
 
   comics = new Array<Object>();
   isLoading = false;
+  spinner: string;
 
   constructor(private comicsService: ComicsService) { }
 
   ngOnInit() {
+    this.spinner = Helpers.getSpinner();
     this.isLoading = true;
+
     this.comicsService.indexComics().then(resp => {
       this.comics = resp;
       this.isLoading = false;

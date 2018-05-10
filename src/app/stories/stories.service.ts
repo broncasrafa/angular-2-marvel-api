@@ -16,7 +16,7 @@ export class StoriesService {
   constructor(private http: Http) { }
 
   indexStories() {
-    const url = `${this.baseUrl}/stories?apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}&limit=100`;
+    const url = `${this.baseUrl}/stories?apikey=${this.apiKey}&ts=${this.ts}&hash=${this.hash}&limit=40`;
 
     return this.http
                .get(url)
