@@ -1,14 +1,4 @@
 <div class="container">
-  <div class="row">
-    <ul class="thumbnails" id="thumbnails">
-      <li *ngFor="let c of comics" class="col-md-3 col-sm-3 col-xs-12">
-        <a class="thumbnail" href="comic/{{ c.id }}">
-          <img src="{{ c.thumbnail.path}}/portrait_uncanny.{{ c.thumbnail.extension }}" alt="{{ c.title }}"/>
-          <p>{{ c.title }}</p>
-        </a>
-      </li>
-    </ul>
-  </div>
 
   <!-- Spinners -->
   <div class="row" *ngIf="isLoading">
@@ -17,5 +7,19 @@
       <br />
       <h3>Carregando...</h3>
     </div>
+  </div>
 </div>
+
+
+<div class="row pad-row text-center" *ngIf="!isLoading">
+  <h2>Comics</h2>
+  <br /><br />
+  <ul class="thumbnails" id="thumbnails">
+    <li *ngFor="let c of comics" class="col-md-3 col-sm-3 col-xs-12">
+      <a class="thumbnail" href="comic/{{ c.id }}">
+        <img src="{{ c.thumbnail.path}}/portrait_uncanny.{{ c.thumbnail.extension }}" alt="{{ c.title }}"/>
+        <p>{{ c.title }}</p>
+      </a>
+    </li>
+  </ul>
 </div>

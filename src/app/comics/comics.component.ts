@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ComicsService } from './comics.service';
 import { Helpers } from '../app.helpers';
+import { Comic } from '../models/comic';
+
 
 @Component({
   selector: 'app-comics',
@@ -9,7 +11,7 @@ import { Helpers } from '../app.helpers';
 })
 export class ComicsComponent implements OnInit {
 
-  comics = new Array<Object>();
+  comics = new Array<Comic>();
   isLoading = false;
   spinner: string;
 

@@ -9,8 +9,11 @@
         </p>
       </div>
       <div class="col-md-5 col-md-pull-7">
-        <img class="featurette-image img-responsive center-block" data-src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}" alt="{{ comic.title }}">
-      </div>
+          <img class="featurette-image img-responsive center-block"
+               data-src="../../../assets/js/holder/holder.js/500x500/auto" alt="{{ comic.title }}"
+               src="{{ comic.thumbnail.path }}/{{imageVariants}}.{{ comic.thumbnail.extension }}"
+               data-holder-rendered="true">
+        </div>
     </div>
     <hr class="featurette-divider">
     <div class="row">

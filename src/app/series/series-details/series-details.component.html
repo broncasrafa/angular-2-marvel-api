@@ -1,64 +1,115 @@
 <div class="container">
-  <div class="row" *ngIf="hasErrors">
-    <div class="alert alert-danger">
-      {{ errors.status }}
+    <div class="row" *ngIf="hasErrors">
+      <div class="alert alert-danger">
+        {{ errors.status }}
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <h3 class="page-header"> {{ serie.title }}</h3>
-    <p class="lead">
-      {{ serie.description }}
-    </p>
-  </div>
-  <div class="row">
-    <div class="col-xs-6 col-md-4">
-      <ul class="thumbnails" id="thumbnails">
-          <li>
-            <a class="thumbnail" href="#" style="cursor: none">
-              <img src="{{ serie.thumbnail.path }}/portrait_incredible.{{ serie.thumbnail.extension }}" alt=""/>
-            </a>
-          </li>
-        </ul>
+    <div class="row">
+        <h3 class="page-header"> {{ serie.title }}</h3>
+        <div class="col-xs-6 col-md-4">
+          <ul class="thumbnails" id="thumbnails">
+              <li>
+                <a class="thumbnail" href="#" style="cursor: none">
+                  <img src="{{ serie.thumbnail.path }}/{{ imageVariants }}.{{ serie.thumbnail.extension }}" alt=""/>
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8">
+          <p class="lead">
+            {{ serie.description }}
+          </p>
+          <p *ngIf="serie.startYear != null">
+              <b>Start Year</b>: {{ serie.startYear }}
+            </p>
+            <p *ngIf="serie.endYear != null">
+              <b>End Year</b>: {{ serie.endYear }}
+            </p>
+            <p *ngIf="serie.modified != null">
+              <b>Modified</b>: {{ serie.modified }}
+            </p>
+            <p *ngIf="serie.rating != null">
+                <b>Rating</b>: {{ serie.rating }}
+              </p>
+            <b>Creators</b>: <br />
+            <div *ngFor="let c of serie.creators.items">
+                {{ c.name }} - {{ c.role }}
+            </div>
+        </div>
+      </div>
+
+    <!-- Spinners -->
+    <div class="row" *ngIf="isLoading">
+      <div class="text-center">
+        <img src="{{ spinner }}" height="150" width="150" />
+        <br />
+        <h3>Carregando...</h3>
+      </div>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-8">
-      <p><b>Start Year</b>: {{ serie.startYear }}</p>
-      <p><b>End Year</b>: {{ serie.endYear }}</p>
-      <p><b>Rating</b>: {{ serie.rating }}</p>
-      <p><b>Modified</b>: {{ serie.modified }}</p>
-    </div>
+
+    <div class="row" *ngIf="someCreators != undefined && someCreators.length > 0">
+        <div class="col-sm-12 col-md-12 col-xs-12 main">
+          <h1 class="page-header">Creators</h1>
+          <div class="row placeholders">
+            <div class="col-xs-4 col-sm-2 placeholder" *ngFor="let c of someCreators">
+              <a href="creator/{{ c.id }}">
+                <img src="{{ c.thumbnail.path}}/standard_xlarge.{{ c.thumbnail.extension }}" width="200" height="200" class="img-responsive" alt="{{ c.firstName }}">
+                <span class="text-muted" style="margin: 20px -2px !important;">{{ c.fullName }}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="someCharacters != undefined && someCharacters.length > 0">
+        <div class="col-sm-12 col-md-12 col-xs-12 main">
+          <h1 class="page-header">Characters</h1>
+          <div class="row placeholders">
+            <div class="col-xs-4 col-sm-2 placeholder" *ngFor="let c of someCharacters">
+              <a href="character/{{ c.id }}">
+                <img src="{{ c.thumbnail.path}}/standard_xlarge.{{ c.thumbnail.extension }}" width="200" height="200" class="img-responsive" alt="{{ c.name }}" style="border-radius: 50% !important;">
+                <span class="text-muted">{{ c.name }}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="someStories != undefined && someStories.length > 0">
+          <h1 class="page-header">Stories</h1>
+          <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of someStories">
+              <a href="storie/{{ c.id }}">
+                <span class="text-muted">{{ c.title }}</span>
+              </a>
+          </div>
+        </div>
+      <div class="row" *ngIf="someComics != undefined && someComics.length > 0">
+        <div class="col-sm-12 col-md-12 col-xs-12 main">
+          <h1 class="page-header">Comics</h1>
+          <div class="row placeholders">
+            <div class="col-xs-4 col-sm-2 placeholder" *ngFor="let c of someComics">
+              <a href="comic/{{ c.id }}">
+                <img src="{{ c.thumbnail.path}}/standard_xlarge.{{ c.thumbnail.extension }}" width="200" height="200" class="img-responsive" alt="{{ c.title }}">
+                <span class="text-muted" style="margin: 20px -2px !important;">{{ c.title }}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="someEvents != undefined && someEvents.length > 0">
+        <div class="col-sm-12 col-md-12 col-xs-12 main">
+          <h1 class="page-header">Events</h1>
+          <div class="row placeholders">
+            <div class="col-xs-4 col-sm-2 placeholder" *ngFor="let c of someEvents">
+              <a href="event/{{ c.id }}">
+                <img src="{{ c.thumbnail.path}}/standard_xlarge.{{ c.thumbnail.extension }}" width="200" height="200" class="img-responsive" alt="{{ c.title }}">
+                <span class="text-muted" style="margin: 20px -2px !important;">{{ c.title }}</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
   </div>
-  <div class="row">
-    <h3 class="page-header">Creators</h3>
-    <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of serie.creators.items">
-        {{ c.name }} - {{ c.role }}
-    </div>
-  </div>
-  <div class="row">
-    <h3 class="page-header">Characters</h3>
-    <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of serie.characters.items">
-        {{ c.name }}
-    </div>
-  </div>
-  <div class="row">
-    <h3 class="page-header">Stories</h3>
-    <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of serie.stories.items">
-        {{ c.name }}
-    </div>
-  </div>
-  <div class="row">
-    <h3 class="page-header">Comics</h3>
-    <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of serie.comics.items">
-        {{ c.name }}
-    </div>
-  </div>
-  <div class="row">
-    <h3 class="page-header">Events</h3>
-    <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of serie.events.items">
-        {{ c.name }}
-    </div>
-  </div>
-</div>
 
 
 

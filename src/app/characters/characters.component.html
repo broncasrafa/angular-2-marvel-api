@@ -2,7 +2,7 @@
 
   <div class="row pad-row text-center">
     <h2>Top Characters</h2>
-
+    <br /><br />
     <div class="col-md-3 col-sm-3 col-xs-6" *ngFor="let c of characters">
         <a href="character/{{ c.id }}"><img src="{{ c.thumbnail.path }}/standard_xlarge.{{ c.thumbnail.extension }}" class="img-responsive img-circle pad-img" alt="{{ c.name }}" /></a>
       <h4>

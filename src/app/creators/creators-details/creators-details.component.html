@@ -1,3 +1,77 @@
-<p>
-  creators-details works!
-</p>
+<div class="container">
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5">
+        <h2 class="featurette-heading">{{ creator.fullName }}</h2>
+        <p class="lead">
+        </p>
+      </div>
+      <div class="col-md-5 col-md-pull-7">
+        <img class="featurette-image img-responsive center-block"
+             data-src="../../../assets/js/holder/holder.js/500x500/auto" alt="{{ creator.name }}"
+             src="{{ creator.thumbnail.path }}/{{imageVariants}}.{{ creator.thumbnail.extension }}"
+             data-holder-rendered="true">
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <!-- Spinners -->
+    <div class="row" *ngIf="isLoading">
+      <div class="text-center">
+        <img src="{{ spinner }}" height="150" width="150" />
+        <br />
+        <h3>Carregando...</h3>
+      </div>
+    </div>
+
+    <div class="row" *ngIf="someComics != undefined && someComics.length > 0">
+      <div class="col-sm-12 col-md-12 col-xs-12 main">
+        <h1 class="page-header">Comics</h1>
+        <div class="row placeholders">
+          <div class="col-xs-4 col-sm-2 placeholder" *ngFor="let c of someComics">
+            <a href="comic/{{ c.id }}">
+              <img src="{{ c.thumbnail.path}}/standard_xlarge.{{ c.thumbnail.extension }}" width="200" height="200" class="img-responsive" alt="{{ c.title }}">
+              <span class="text-muted" style="margin: 20px -2px !important;">{{ c.title }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="someEvents != undefined && someEvents.length > 0">
+      <div class="col-sm-12 col-md-12 col-xs-12 main">
+        <h1 class="page-header">Events</h1>
+        <div class="row placeholders">
+          <div class="col-xs-4 col-sm-2 placeholder" *ngFor="let c of someEvents">
+            <a href="event/{{ c.id }}">
+              <img src="{{ c.thumbnail.path}}/standard_xlarge.{{ c.thumbnail.extension }}" width="200" height="200" class="img-responsive" alt="{{ c.title }}">
+              <span class="text-muted" style="margin: 20px -2px !important;">{{ c.title }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="someSeries != undefined && someSeries.length > 0">
+      <div class="col-sm-12 col-md-12 col-xs-12 main">
+        <h1 class="page-header">Series</h1>
+        <div class="row placeholders">
+          <div class="col-xs-4 col-sm-2 placeholder" *ngFor="let c of someSeries">
+            <a href="serie/{{ c.id }}">
+              <img src="{{ c.thumbnail.path}}/standard_xlarge.{{ c.thumbnail.extension }}" width="200" height="200" class="img-responsive" alt="{{ c.title }} ">
+              <span class="text-muted">{{ c.title }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="someStories != undefined && someStories.length > 0">
+      <h1 class="page-header">Stories</h1>
+      <div class="col-md-6 col-xs-6 col-sm-6" *ngFor="let c of someStories">
+          <a href="storie/{{ c.id }}">
+            <span class="text-muted">{{ c.title }}</span>
+          </a>
+      </div>
+    </div>
+
+
+
+</div>

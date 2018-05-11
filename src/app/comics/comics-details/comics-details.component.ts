@@ -11,8 +11,11 @@ import { Comic } from '../../models/comic';
 export class ComicsDetailsComponent implements OnInit {
 
   comic: Comic;
+  imageVariants: string;
 
-  constructor(private comicsService: ComicsService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private comicsService: ComicsService,
+              private route: ActivatedRoute,
+              private router: Router) { }
 
   ngOnInit() {
     this.comic = new Comic();
@@ -20,6 +23,7 @@ export class ComicsDetailsComponent implements OnInit {
     const id = +this.route.snapshot.params['id'];
 
     this.comicsService.detailsComics(id).then(resp => {
+      this.imageVariants = 'portrait_uncanny';
       this.comic = resp;
     });
   }
